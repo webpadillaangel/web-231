@@ -8,6 +8,7 @@
 ;===========================================
 */ 
 
+// Person object with a name property and a speak method. the speak method takes a parameter to console log text.
 var person = {
     name: null,
     speak: function(){
@@ -20,5 +21,8 @@ var person = {
     }
 }
 
+// Assign a name value to the person object
 person = "Angel";
+
+// Calling the speak method and passing in the person name value.
 person.speak(person.name);
