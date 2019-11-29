@@ -3,11 +3,14 @@
 ; Title: Exercise 1.1
 ; Author: Christine Bohnet
 ; Date: 26 Nov 2019
-; Modified By: <Your name>
+; Modified By: Angel Padilla
 ; Description: This program demonstrates the
 ; use of errors in an application
 ;===========================================
 */
+
+/*
+Original Code from Christine Bohnet
 
 var x = 5;
 var y = "6";
@@ -15,9 +18,6 @@ var z = null;
 
 alert("x + y = " + (x + y));
 alert("x / z = " + x / z);
-
-/* 
-------------
 
 My Response to Bohnet
 
@@ -32,7 +32,8 @@ can be further be improved by checking for a NaN - Not a real number). So in the
 the parameter to assign it a value or else default a value. I check to see if the parameters are not null or not equal to zero, and if the check is true I parseInt() 
 the parameters and if the check fails I assign a default value.
 
-My solution:
+------------
+*/
 
 function logAddition(param1, param2) {
   var x = parseInt(param1);
@@ -50,7 +51,3 @@ function logDivision(param1, param2){
 
 logAddition(5, "6");
 logDivision(5, null);
-
-
-------------
-*/
