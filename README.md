@@ -1,7 +1,6 @@
 # web-231
 
-Enterprise Javascript Course
-
-Course Professor
-Professor Massoud
-
+Introduction to JavaScript
+# contributors
+Professor Krasso - Bellevue University
+Angel Padilla - Bellevue University
