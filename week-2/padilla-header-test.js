@@ -9,7 +9,7 @@
 */
 
 // Importing padilla-header file
-const header = require("./padilla-header.js");
+const header = require("../padilla-header.js");
 
 // logging the call to the display function from the header variable.
 console.log(header.display("Angel", "Padilla", "Header"));
