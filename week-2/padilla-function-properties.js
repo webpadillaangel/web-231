@@ -1,5 +1,5 @@
 // Importing padilla-header file
-var header = require('./padilla-header.js');
+var header = require("./padilla-header.js");
 
 /*
 ============================================
@@ -11,11 +11,10 @@ var header = require('./padilla-header.js');
 ;===========================================
 */
 
-
- // initializing the angel property, mynName function property definitions
- myName.angel = "Angel";
- myName.padilla = "Padilla";
- myName.exercise = "Exercise 2.3";
+// initializing the angel property, mynName function property definitions
+myName.angel = "Angel";
+myName.padilla = "Padilla";
+myName.exercise = "Exercise 2.3";
 
 /**
  * Params: none
@@ -26,9 +25,8 @@ function myName() {
   return "Hello " + myName.angel + " " + myName.padilla + "!";
 }
 
-
 // console logging the header passing the initialized myName values
-console.log(header.display(myName.angel, myName.padilla, myName.exercise))
+console.log(header.display(myName.angel, myName.padilla, myName.exercise));
 
 // new line to add separation
 console.log("\n");
