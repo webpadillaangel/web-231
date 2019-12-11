@@ -32,3 +32,14 @@ if (result === true) {
 } else {
   console.log("The loop did not find the 'z' item in the array.");
 }
+
+// output
+/*
+Angel Padilla
+Week 3 Main Discussion Board
+Date: 12/10/2019
+a
+b
+c
+Found it! The current item is z
+*/
