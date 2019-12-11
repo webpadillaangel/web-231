@@ -17,7 +17,7 @@ console.log(header.display("Angel", "Padilla", "Week 3 Main Discussion Board"));
 var stringArray = ["a", "b", "c", "z", "d", "r", "k"];
 var result = false;
 
-for (let index == 0; index < stringArray.length; index+) {
+for (let index == 0; index < stringArray.length; index++) {
   const currentItem = stringArray[index];
   if (currentItem === "z") {
     result = true;
