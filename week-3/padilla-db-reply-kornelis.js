@@ -27,7 +27,7 @@ console.log('\n');
 var age = 20;
 
 // if else statements
-if (age < 12) {
+if (age <= 12) {
   console.log('You are a child!');
 }
 else if (age <= 18 && age > 12) {
