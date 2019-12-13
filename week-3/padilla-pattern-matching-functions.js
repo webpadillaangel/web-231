@@ -39,6 +39,8 @@ function logMatch(arg1, arg2) {
   return console.log(arg1 + " and " + arg2 + " do match!");
 }
 
+console.log("\n");
+
 console.log(match("A", "B"));
 console.log(match(2, 2));
 
@@ -46,9 +48,9 @@ console.log("\n");
 
 // checking if the match() returns strictly true and if so, return the result of the logMatch() if not return the result of logMismatch()
 if (match(boolTrue, boolFalse) === true) {
-  console.log(logMatch(boolTrue, boolFalse));
+  logMatch(boolTrue, boolFalse);
 } else {
-  console.log(logMismatch(boolTrue, boolFalse));
+  logMismatch(boolTrue, boolFalse);
 }
 
 // checking if the match() returns strictly true and if so, return the result of the logMatch() if not return the result of logMismatch()
@@ -79,9 +81,12 @@ Exercise 3.2
 Date: 12/13/2019
 
 
+false
+true
+
+
 true and false do not match!
 Truck and Car do not match!
 Bike and Bike do match!
 Four and Three do not match!
-
 */
