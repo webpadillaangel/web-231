@@ -11,29 +11,6 @@
 // Importing padilla-header file
 var header = require("../padilla-header");
 
-console.log(header.display("Angel", "Padilla", "Exercise 3.2"));
-
-// match() has two parameters. Return true if item1 is strictly equal (both type and value) to item2, if not then return false.
-function match(item1, item2) {
-  if (item1 === item2) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-// logMismatch() has two parameters, the function returns a string containing both parameters saying the items don't match.
-function logMismatch(item1, item2) {
-  let misMatchMessage = item1 + " and " + item2 + " do not match!";
-  return misMatchMessage;
-}
-
-// logMatch() has two parameters, the function returns a string containing both parameters saying the items do match.
-function logMatch(item1, item2) {
-  let matchMessage = item1 + " and " + item2 + " do match!";
-  return matchMessage;
-}
-
 // six local test variables
 var boolTrue = true;
 var boolFalse = false;
@@ -43,6 +20,27 @@ var nonAuto1 = "Bike";
 var nonAuto2 = "Bike";
 var firstNumber = "Four";
 var secondNumber = "Three";
+
+console.log(header.display("Angel", "Padilla", "Exercise 3.2"));
+
+// match() has two parameters. Return true if item1 is strictly equal (both type and value) to item2, if not then return false.
+function match(arg1, arg2) {
+  if (arg1 === arg2) return true;
+  else return false;
+}
+
+// logMismatch() has two parameters, the function returns a string containing both parameters saying the items don't match.
+function logMismatch(arg1, arg2) {
+  return console.log(arg1 + " and " + arg2 + " do not match!");
+}
+
+// logMatch() has two parameters, the function returns a string containing both parameters saying the items do match.
+function logMatch(arg1, arg2) {
+  return console.log(arg1 + " and " + arg2 + " do match!");
+}
+
+console.log(match("A", "B"));
+console.log(match(2, 2));
 
 console.log("\n");
 
@@ -55,23 +53,23 @@ if (match(boolTrue, boolFalse) === true) {
 
 // checking if the match() returns strictly true and if so, return the result of the logMatch() if not return the result of logMismatch()
 if (match(auto1, auto2) === true) {
-  console.log(logMatch(auto1, auto2));
+  logMatch(auto1, auto2);
 } else {
-  console.log(logMismatch(auto1, auto2));
+  logMismatch(auto1, auto2);
 }
 
 // checking if the match() returns strictly true and if so, return the result of the logMatch() if not return the result of logMismatch()
 if (match(nonAuto1, nonAuto2) === true) {
-  console.log(logMatch(nonAuto1, nonAuto2));
+  logMatch(nonAuto1, nonAuto2);
 } else {
-  console.log(logMismatch(nonAuto1, nonAuto2));
+  logMismatch(nonAuto1, nonAuto2);
 }
 
 // checking if the match() returns strictly true and if so, return the result of the logMatch() if not return the result of logMismatch()
 if (match(firstNumber, secondNumber) === true) {
-  console.log(logMatch(firstNumber, secondNumber));
+  logMatch(firstNumber, secondNumber);
 } else {
-  console.log(logMismatch(firstNumber, secondNumber));
+  logMismatch(firstNumber, secondNumber);
 }
 
 // output - From testing all six variables
