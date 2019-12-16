@@ -66,15 +66,15 @@ Date: 12/15/2019
 
 -- DO THE NUMBERS MATCH GAME --
 
-5 and 7 do not match!
 5 and 10 do not match!
-5 and 4 do not match!
-5 and 1 do not match!
-5 and 4 do not match!
+5 and 2 do not match!
+5 and 3 do not match!
+5 and 10 do not match!
+5 and 5 do match!
+5 and 8 do not match!
 5 and 3 do not match!
 5 and 10 do not match!
 5 and 8 do not match!
-5 and 6 do not match!
-5 and 6 do not match!
+5 and 7 do not match!
 
 */
