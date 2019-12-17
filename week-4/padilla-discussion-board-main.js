@@ -15,15 +15,15 @@ var header = require("../padilla-header");
 console.log(header.display("Angel", "Padilla", "Exercise 4.1"));
 
 // var initialize array using the array constructor with a default of 6 elements
-var defaultArray = new array('w','e','b', 2, 3, 1);
+var defaultArray = new array("w", "e", "b", 2, 3, 1);
 
 // push an element into the defaultArray
-defaultArray.Push('!');
+defaultArray.Push("!");
 
 outPutArrayItems(defaultArray);
 
 // function takes an array to iterate over the elements and log each of them.
-function outPutArrayItems(arrayItem){
+function outPutArrayItems(arrayItem) {
   item1.forEach(element => {
     console.log(element);
   });
@@ -42,5 +42,3 @@ b
 1
 !
 */
-
-
