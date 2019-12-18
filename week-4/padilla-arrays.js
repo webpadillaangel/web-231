@@ -7,7 +7,7 @@ var header = require("../padilla-header");
 ; Author: Angel Padilla
 ; Date:   17 Dec 2019
 ; Modified By:
-; Description:
+; Description: Practice the use of arrays. Iterating over an array and logging the elements
 ;===========================================
 */
 
