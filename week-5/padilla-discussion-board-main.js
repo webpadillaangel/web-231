@@ -26,5 +26,5 @@ var carInfo = cars.Map(x => {
   return `The make is: ${x.make} and the model is: ${x.model}`;
 });
 
-// Logging the result carInfo
+// Logging the result of carInfo
 console.log(carInfo);
