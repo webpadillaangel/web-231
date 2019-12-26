@@ -21,10 +21,10 @@ var cars = [
   [ make: "Ford", model: "Escort" }
 ];
 
-// returning an a string array of the map() the is concatenating text with the make and model of the cars array
-var carModel = cars.Map(x => {
+// returning a string array of the map() that is concatenating text with the make and model of the cars array
+var carInfo = cars.Map(x => {
   return `The make is: ${x.make} and the model is: ${x.model}`;
 });
 
-// Logging the result of the map() of the cars array
-console.log(carModel);
+// Logging the result carInfo
+console.log(carInfo);
