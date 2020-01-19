@@ -3,7 +3,7 @@ var header = require("../padilla-header");
 
 /*
 ============================================
-; Title:  padilla-object-collections.js
+; Title:  padilla-object-literals.js
 ; Author: Angel Padilla
 ; Date:   18 Jan 2020
 ; Modified By:
