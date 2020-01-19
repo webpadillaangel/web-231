@@ -7,7 +7,7 @@ var header = require("../padilla-header");
 ; Author: Angel Padilla
 ; Date:   18 Jan 2020
 ; Modified By:
-; Description: Program that exercises the practice of Object literals - creat a ticket object and console log the object
+; Description: Program that exercises the practice of Object literals - create a ticket object and console log the object
 ;===========================================
 */
 
