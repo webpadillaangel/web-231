@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Main Post - Ex. 7.1</title>
+
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .left,
+      .right {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        font-size: large;
+      }
+
+      .left {
+        background: #117893;
+        color: #f0daa4;
+      }
+
+      .right {
+        background: #f0daa4;
+        color: #117893;
+      }
+
+      #nameInput {
+        margin: 10px 0;
+        display: block;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        padding: 0.375rem 0.75rem;
+        font: 400 11px system-ui;
+      }
+
+      #submit {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        background-color: #117893;
+        color: #fff;
+      }
+    </style>
+
+    <script>
+      /*
+        ============================================
+        ; Title:  padilla-index.html
+        ; Author: Angel Padilla
+        ; Date:   21 Jan 2020
+        ; Modified By:
+        ; Description: html with embedded js containing two errors
+        ;===========================================
+        */
+      // when the window is loading, retrieve the current date and insert the value inside the todays date span with an "id" of todaysDate
+      window.onload = function() {
+
+        var currentDate = new Date().toLocaleDateString("en-US");
+        document.querySelector(".todaysDate").innerText = currentDate;
+
+        let output = `\nAngel Padilla \nExercise 7.1  \nDate:  ${currentDate}`;
+        console.log(output);
+      };
+
+      // updateGreeting is invoked onclick and it updates the h1 of the right side, and appends Hello with the value of the input field
+      function updateGreeting() {
+        var getName = document.getElementById("nameInput");
+        var h1Element = document.getElementById("greetHeader").innerHTML = "Hello " + getName + "!";
+      }
+
+      // The page should work properly.
+      // 1. The date should be populated on window load,
+      // 2. The input from the text input field should be put inside the h1 of the right side on click of the submit button
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Exercise 7.1</h1>
+      </div>
+      <div class="right">
+        <h1 id="greetHeader">Hello!</h1>
+        <p>The date is: <span id="todaysDate"></span></p>
+
+        <label for="nameInput">What is your name?</label>
+        <input type="text" name="nameInput" id="nameInput" />
+        <button id="submit" onclick="updateGreeting()">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
