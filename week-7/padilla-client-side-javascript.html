@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 7.3</title>
+
+    <!-- you will need to the href to point to your root directories css file -->
+    <link rel="stylesheet" href="../site.css" />
+
+    <script>
+      /*
+        ============================================
+        ; Title:  padilla-client-side-javascript.html
+        ; Author: Angel Padilla
+        ; Date:   22 Jan 2020
+        ; Modified By:
+        ; Description: practice client javascript
+        ;===========================================
+        */
+      // when the window is loaded, retrieve the current date and log what would normally be in the header.
+      window.onload = function() {
+
+      // get current date
+      var currentDate = new Date().toLocaleDateString("en-US");
+
+      let output = `\nAngel Padilla \nExercise 7.3  \nDate:  ${currentDate}`;
+
+      console.log(output);
+
+      // shopping list array that will be used to iterate over to create html text for the table body
+      var shoppingList2 = ["Oranges", "Apples", "Pears", "Limes", "Lemons"];
+
+      // html items will be pushed into tableItems
+      var tableItems = [];
+
+      // iterate over the shoppingList2 and interpolating html tr,td with the shopping items
+      shoppingList2.forEach(function(item, i) {
+        var index = 1;
+        let listItem = `<tr><td>${i+1}</td><td>${item}</td></tr>`;
+        tableItems.push(listItem);
+        index++;
+      });
+
+      // finding the id of shoppingList2, which is the tbody of the table where we are going to join the array and insert that text inside the tbody.
+      document.getElementById('shoppingList2').innerHTML = tableItems.join(' ');
+
+      // the result is the table body is now filled.
+
+      };
+
+    </script>
+  </head>
+  <body>
+    <div id="list">
+
+      <h1>Shopping List v.1</h1>
+      <ol>
+        <script>
+          document.write("<li>Oranges</li>");
+          document.write("<li>Apples</li>");
+          document.write("<li>Pears</li>");
+          document.write("<li>Limes</li>");
+          document.write("<li>Lemons</li>");
+        </script>
+      </ol>
+    </div>
+    <div id="list2">
+      <h1>Shopping List v.2</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Item</th>
+          </tr>
+        </thead>
+        <tbody id="shoppingList2">
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
