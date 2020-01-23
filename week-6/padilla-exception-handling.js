@@ -5,7 +5,7 @@ var header = require("../padilla-header");
 ============================================
 ; Title:  padilla-object-collections.js
 ; Author: Angel Padilla
-; Date:   15 Jan 2019
+; Date:   15 Jan 2020
 ; Modified By:
 ; Description: Program that practices the try/catch/finally statement.
 ;===========================================
