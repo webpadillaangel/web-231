@@ -19,20 +19,16 @@
         */
       // when the window is loaded, retrieve the current date and log what would normally be in the header.
       window.onload = function() {
+        // get current date
+        var currentDate = new Date().toLocaleDateString("en-US");
 
-      // get current date
-      var currentDate = new Date().toLocaleDateString("en-US");
+        let output = `\nAngel Padilla \nExercise 7.4  \nDate:  ${currentDate}`;
 
-      let output = `\nAngel Padilla \nExercise 7.4  \nDate:  ${currentDate}`;
-
-      console.log(output);
-
+        console.log(output);
       };
-
     </script>
   </head>
   <body>
-
     <h1>Computer Components</h1>
     <table id="computerTable">
       <thead>
@@ -47,7 +43,11 @@
         <td>Laptop</td>
         <td>1,500.99</td>
         <td>
-          <a href="javascript:alert(document.getElementsByClassName('id')[0].innerHTML);">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a>
+          <a
+            href="javascript:alert(document.getElementsByClassName('id')[0].innerHTML);"
+            >EDIT</a
+          >
+          | <a href="javascript:confirm('Are you sure?')">DELETE</a>
         </td>
       </tr>
       <tr>
@@ -55,7 +55,11 @@
         <td>Motherboard</td>
         <td>35.70</td>
         <td>
-          <a href="javascript:alert(document.getElementsByClassName('id')[1].innerHTML);">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a>
+          <a
+            href="javascript:alert(document.getElementsByClassName('id')[1].innerHTML);"
+            >EDIT</a
+          >
+          | <a href="javascript:confirm('Are you sure?')">DELETE</a>
         </td>
       </tr>
       <tr>
@@ -63,7 +67,11 @@
         <td>Monitor</td>
         <td>174.99</td>
         <td>
-          <a href="javascript:alert(document.getElementsByClassName('id')[2].innerHTML);">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a>
+          <a
+            href="javascript:alert(document.getElementsByClassName('id')[2].innerHTML);"
+            >EDIT</a
+          >
+          | <a href="javascript:confirm('Are you sure?')">DELETE</a>
         </td>
       </tr>
       <tr>
@@ -71,7 +79,11 @@
         <td>Mouse</td>
         <td>13.99</td>
         <td>
-          <a href="javascript:alert(document.getElementsByClassName('id')[3].innerHTML);">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a>
+          <a
+            href="javascript:alert(document.getElementsByClassName('id')[3].innerHTML);"
+            >EDIT</a
+          >
+          | <a href="javascript:confirm('Are you sure?')">DELETE</a>
         </td>
       </tr>
       <tr>
@@ -79,7 +91,11 @@
         <td>Keyboard</td>
         <td>14.50</td>
         <td>
-          <a href="javascript:alert(document.getElementsByClassName('id')[4].innerHTML);">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a>
+          <a
+            href="javascript:alert(document.getElementsByClassName('id')[4].innerHTML);"
+            >EDIT</a
+          >
+          | <a href="javascript:confirm('Are you sure?')">DELETE</a>
         </td>
       </tr>
     </table>
