@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignment 7.4</title>
+
+    <!-- you will need to the href to point to your root directories css file -->
+    <link rel="stylesheet" href="../site.css" />
+
+    <script>
+      /*
+        ============================================
+        ; Title:  padilla-inline-javascript.html
+        ; Author: Angel Padilla
+        ; Date:   24 Jan 2020
+        ; Modified By:
+        ; Description: practice inline javascript with alerts javascript
+        ;===========================================
+        */
+      // when the window is loaded, retrieve the current date and log what would normally be in the header.
+      window.onload = function() {
+
+      // get current date
+      var currentDate = new Date().toLocaleDateString("en-US");
+
+      let output = `\nAngel Padilla \nExercise 7.4  \nDate:  ${currentDate}`;
+
+      console.log(output);
+
+      };
+
+    </script>
+  </head>
+  <body>
+
+    <h1>Computer Components</h1>
+    <table id="computerTable">
+      <thead>
+        <th>Id</th>
+        <th>LastName</th>
+        <th>Amount</th>
+        <th>Functions</th>
+      </thead>
+
+      <tr>
+        <td class="id">1</td>
+        <td>Laptop</td>
+        <td>1,500.99</td>
+        <td>
+          <a href="javascript:alert(document.getElementsByClassName('id')[0].innerHTML);">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="id">2</td>
+        <td>Motherboard</td>
+        <td>35.70</td>
+        <td>
+          <a href="javascript:alert(document.getElementsByClassName('id')[1].innerHTML);">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="id">3</td>
+        <td>Monitor</td>
+        <td>174.99</td>
+        <td>
+          <a href="javascript:alert(document.getElementsByClassName('id')[2].innerHTML);">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="id">4</td>
+        <td>Mouse</td>
+        <td>13.99</td>
+        <td>
+          <a href="javascript:alert(document.getElementsByClassName('id')[3].innerHTML);">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="id">5</td>
+        <td>Keyboard</td>
+        <td>14.50</td>
+        <td>
+          <a href="javascript:alert(document.getElementsByClassName('id')[4].innerHTML);">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
