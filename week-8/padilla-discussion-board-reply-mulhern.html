@@ -1,0 +1,57 @@
+<!---
+============================================
+; Title: Discussion Board 8.1
+; Author: Brendan Mulhern
+; Date: 28 January 2020
+; Modified By: Angel Padilla
+; Description: This is html file with 2 jQuery errors.
+;===========================================
+---->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Age Calculator</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    } html {
+      text-align: center;
+      background: pink;
+    } header {
+      background: yellow;
+      color: blue;
+    } h2 {
+      color: blue;
+      margin-top: 2vw;
+    } input {
+      height: 5vw;
+      width: 20vw;
+      text-align: center;
+    } button {
+      height: 5vw;
+      width: 20vw;
+      background: yellow;
+      color: blue;
+      margin-top:50vw;
+    }
+  </style>
+  <body>
+  <header>
+    <h1>On Double Click</h1>
+  </header>
+  <button onclick="submit();" ondblclick="submit2();">Go</button>
+  <div id="output"></div>
+  <script>
+  function submit() {
+    $('html').css("backgroundColor", "blue");
+  };
+  function submit2() {
+    $('html').css("backgroundColor", "pink");
+  }
+  </script>
+  </body>
+</html>
