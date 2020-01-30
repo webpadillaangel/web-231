@@ -1,0 +1,62 @@
+<!--
+============================================
+; Title:  padilla-dynamic-html.html
+; Author: Angel Padilla
+; Date:   29 Jan 2020
+; Modified By:
+; Description: practice the use of creating html when iterating over and array of objects
+;===========================================
+*/
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 8.2</title>
+
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+      ul {
+        margin: 0 auto;
+        list-style: none;
+      }
+      .topbar {
+        background-color: aquamarine;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar"></div>
+    <div id="fruits"></div>
+    <script>
+      // get current date
+      var currentDate = new Date().toLocaleDateString("en-US");
+
+      let output = `\nAngel Padilla \nExercise 8.1  \nDate:  ${currentDate}`;
+
+      console.log(`\noutput`);
+
+      // - fruits array
+      var fruits = [
+        { id: 1, type: "Banana" },
+        { id: 2, type: "Orange" },
+        { id: 3, type: "Black Berry" },
+        { id: 4, type: "Passion Fruit" },
+        { id: 5, type: "Guava" }
+      ];
+
+      // creating the initial html text of the ul
+      var out = "<ul><li><h1>Fruits</h1>";
+
+      // iterating over the fruits array objects and displaying the data
+      fruits.forEach(x => {
+        out += "<li>Id: " + x.id + " - Type: " + x.type + "</li>";
+      });
+
+      out += "</ul>";
+
+      document.getElementById("fruits").innerHTML = out;
+    </script>
+  </body>
+</html>
