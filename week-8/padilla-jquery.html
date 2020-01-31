@@ -1,0 +1,147 @@
+<!--
+============================================
+; Title:  padilla-jquery.html
+; Author: Angel Padilla
+; Date:   30 Jan 2020
+; Modified By:
+; Description: Practicing jquery
+;===========================================
+*/
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Exercise 8.3</title>
+
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+
+      nav {
+        background-color: burlywood;
+        margin-bottom: 20px;
+      }
+
+      .container {
+        margin-left: 20px;
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- you will need to the href to point to your root directories css file -->
+    <link rel="stylesheet" href="../site.css" />
+  </head>
+  <body>
+
+    <nav>
+      Top Bar
+    </nav>
+
+    <div class="container">
+      <h1>Lorem Title</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla
+        finibus, dictum risus non, elementum ipsum. Interdum et malesuada fames ac
+        ante ipsum primis in faucibus. Nullam a justo rutrum felis euismod
+        placerat. Sed auctor lacus eget ultrices egestas. Vivamus eleifend rutrum
+        vehicula. Proin aliquet at est eu porta. Cras lobortis bibendum nisi, eu
+        luctus orci sodales ac. Sed vel iaculis velit. Curabitur nisl elit,
+        consectetur id interdum vitae, placerat ut ligula. Suspendisse est ipsum,
+        consequat et metus ac, laoreet condimentum nunc. Morbi faucibus turpis
+        vestibulum malesuada varius. Nullam neque risus, auctor non mattis sit
+        amet, semper vitae nisl. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. Morbi a vestibulum justo.
+        Quisque finibus ligula a dolor suscipit, non mollis risus pulvinar.
+        Pellentesque at libero vel ex sagittis molestie id at nunc. Phasellus
+        finibus, magna vitae vehicula tincidunt, dolor quam feugiat dui, sed
+        tempor tellus sem vehicula est. Vestibulum tincidunt libero a odio
+        facilisis, venenatis vulputate risus bibendum. Integer non lectus velit.
+        Maecenas bibendum augue et nibh varius, eget finibus risus eleifend.
+        Quisque bibendum a elit sit amet aliquam. Mauris vel eleifend neque.
+        Maecenas iaculis purus nec ipsum vulputate pulvinar. Praesent consequat
+        rhoncus nisi eu faucibus. Duis at ligula id neque rutrum dictum. Nulla
+        pellentesque, felis id fermentum eleifend, risus ligula pulvinar risus,
+        nec semper orci velit a dolor. Nullam a leo luctus, consequat tortor
+        blandit, suscipit purus. Phasellus ultrices iaculis massa vel tempor. Duis
+        at justo porta felis dignissim laoreet vitae sed magna. Nullam iaculis
+        ligula augue. Donec efficitur tincidunt quam, nec lobortis lorem suscipit
+        a. Nam euismod, diam at tempor interdum, libero ex ultrices nisi, vitae
+        porttitor purus mauris a sem. Nullam non pellentesque sapien. Quisque
+        consectetur ultricies nisi, et facilisis quam. Sed tincidunt orci ut lorem
+        ullamcorper, porttitor imperdiet lacus posuere. Ut ornare sagittis tortor.
+        Integer at nisl ut augue gravida vestibulum. Curabitur vitae lectus non
+        dui suscipit consectetur et nec tellus. Nulla facilisi. Sed id condimentum
+        quam, eu egestas justo. Phasellus at dignissim sapien. Sed ut luctus nunc,
+        nec hendrerit felis. Phasellus lobortis non magna sit amet pretium. Nunc
+        aliquam nec neque non tincidunt. Proin varius commodo urna. Morbi iaculis
+        diam vitae urna blandit volutpat. Morbi facilisis leo vitae nisi euismod,
+        viverra malesuada tellus porttitor. Mauris dictum tortor sed lectus
+        maximus congue. Sed quis eros eu libero pulvinar blandit. Nam laoreet
+        semper turpis, et porttitor nisi consequat eget. Proin venenatis leo eu
+        nulla maximus consequat. Generated 5 paragraphs, 404 words, 2744 bytes of
+        Lorem Ipsum
+      </p>
+
+      <button id="toggleBtn">Toggle</button>
+
+      <br>
+      <br>
+
+      <table>
+        <thead>
+          <th>Id</th>
+          <th>Type</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bananas</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              Grapes
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              Guava
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              Strawberries
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              Cherries
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script type="text/javascript">
+      $(function() {
+        $("#toggleBtn").click(function() {
+          $(this)
+            .prev()
+            .toggle();
+        });
+
+        $("td:first-child").click(function(){
+          var currentId = $(this).text();
+          var currentType = $(this).next().text();
+
+          var message = "Id: " + currentId + " Type: " + currentType + ".";
+          alert(message);
+        });
+      });
+    </script>
+  </body>
+</html>
