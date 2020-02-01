@@ -1,0 +1,107 @@
+<!--
+============================================
+; Title:  padilla-putting-it-all-together.html
+; Author: Angel Padilla
+; Date:   31 Jan 2020
+; Modified By:
+; Description: putting it all together, create table with javascript and use jQuery for event handling
+;===========================================
+*/
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignment 8.4</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- you will need to the href to point to your root directories css file -->
+    <link rel="stylesheet" href="../site.css" />
+
+    <style type="text/css">
+      #employee tbody tr:hover {
+        cursor: pointer;
+        background-color: #ffff99;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="emps"></div>
+
+    <script type="text/javascript">
+      // jQuery onClick event
+      // Don't remove this, just add your code to the body of the event (curly braces)
+      $(function() {
+        // creating 5 new employees objects in an array
+        var employees = [
+          new Employee("1", "John", "Johnson", "Librarian"),
+          new Employee("2", "Bill", "Billion", "Scientist"),
+          new Employee("3", "Sue", "Susky", "Project Coordinator"),
+          new Employee("4", "Frank", "Garbage", "Product Manager"),
+          new Employee("5", "Lisa", "Priza", "Senior Analyst")
+        ];
+
+        // employee constructor function
+        function Employee(id, firstName, lastName, title) {
+          this.id = id;
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.title = title;
+        }
+
+        // getEmployee function checks to see if the id passed in exists in the employee array by iterating it with a foreach and checking the id with an if statement.
+        // if it matches it will alert the properties.
+        function getEmployee(id) {
+          employees.forEach(el => {
+            if (el.id === id) {
+              alert(
+                "Id: " +
+                  el.id +
+                  " Name: " +
+                  el.firstName +
+                  " " +
+                  el.lastName +
+                  " Title: " +
+                  el.title +
+                  "."
+              );
+              return;
+            }
+            return;
+          });
+        }
+
+        var output =
+          "<table><thead><th>Id</th><th>First Name</th><th>Last Name</th><th>Title</th></thead><tbody>";
+
+        // dynamic html while iterating over the employees array object
+        employees.forEach(el => {
+          output +=
+            "<tr> <td>" +
+            el.id +
+            "</td><td>" +
+            el.firstName +
+            "</td><td>" +
+            el.lastName +
+            "</td><td>" +
+            el.title +
+            "</td> </tr>";
+        });
+
+        output += "</tbody></table>";
+
+        document.getElementById("emps").innerHTML = output;
+
+        // when clicking on a table tr, find the first td of the clicked tr. get the id and call the get employees() to alert the selected information
+        $("table tr").click(function() {
+          var selectedId = $(this)
+            .find("td:first")
+            .html();
+
+          getEmployee(selectedId);
+        });
+      });
+    </script>
+  </body>
+</html>
